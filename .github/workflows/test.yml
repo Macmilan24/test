@@ -27,10 +27,12 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: say hello
-        run: echo  "<h1> Hello </h1>" >> hello.html
+        run: echo  Hello 
 
       # Runs a set of commands using the runners shell
       - name: Finish test
         run: |
           echo Test being conducted 
           echo Test successful 😁.
+      - name: test html
+        run: htmlhint 'hello world.html'
