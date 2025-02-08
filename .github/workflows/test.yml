@@ -34,5 +34,14 @@ jobs:
         run: |
           echo Test being conducted 
           echo Test successful 😁.
-      - name: test html
+
+      - name: installing npm setup new Ubuntu device
+        uses: actions/setup-node@4
+        with:
+          node-version: 18
+
+      - name: install htmlhint npm package
+        run: npm i -g htmlhint
+
+      - name: test html file using htmlhint
         run: htmlhint 'hello world.html'
