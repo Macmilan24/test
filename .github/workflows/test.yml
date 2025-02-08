@@ -36,7 +36,7 @@ jobs:
           echo Test successful 😁.
 
       - name: installing npm setup new Ubuntu device
-        uses: actions/setup-node@4
+        uses: actions/setup-node@v4
         with:
           node-version: 18
 
