@@ -44,4 +44,4 @@ jobs:
         run: npm i -g htmlhint
 
       - name: test html file using htmlhint
-        run: htmlhint 'hello world.html'
+        run: htmlhint  '**/*.html'
